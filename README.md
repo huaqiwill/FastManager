@@ -16,3 +16,8 @@
 
 <img src="mark_image/README/1715959333427.png" style="zoom:50%;" align="left" />
 
+
+## Futures
+
+* 添加国内镜像下载：需要加速的软件，例如Python、Tomcat、Jmeter等国外资源下载，
+* 
