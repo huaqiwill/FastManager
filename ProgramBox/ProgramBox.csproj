@@ -125,6 +125,10 @@
     </Compile>
     <Compile Include="UI\Node\NodeEnvData.cs" />
     <Compile Include="UI\Node\NodeTools.cs" />
+    <Compile Include="UI\Node\NpmTools.cs" />
+    <Compile Include="UI\PHP\ComposerTools.cs" />
+    <Compile Include="UI\Python\PipTools.cs" />
+    <Compile Include="UI\Python\PyTools.cs" />
     <Compile Include="UI\SQL\FSQL.cs">
       <SubType>Form</SubType>
     </Compile>

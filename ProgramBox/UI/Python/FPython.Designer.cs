@@ -33,6 +33,7 @@ namespace ProgramBox.UI
             this.contextMenuStrip1 = new Sunny.UI.UIContextMenuStrip();
             this.tabControl1 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.uiButton2 = new Sunny.UI.UIButton();
             this.button1 = new Sunny.UI.UIButton();
             this.listView_node = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -52,7 +53,6 @@ namespace ProgramBox.UI
             this.pip中国科学技术大学ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PipRegistryBtn = new Sunny.UI.UIButton();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.uiButton2 = new Sunny.UI.UIButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -95,6 +95,19 @@ namespace ProgramBox.UI
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Python环境管理";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // uiButton2
+            // 
+            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.Location = new System.Drawing.Point(13, 54);
+            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton2.Name = "uiButton2";
+            this.uiButton2.Size = new System.Drawing.Size(126, 34);
+            this.uiButton2.TabIndex = 3;
+            this.uiButton2.Text = "PyQt5工具";
+            this.uiButton2.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // button1
             // 
@@ -149,7 +162,7 @@ namespace ProgramBox.UI
             this.tabPage2.Controls.Add(this.listView1);
             this.tabPage2.Location = new System.Drawing.Point(0, 40);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(200, 60);
+            this.tabPage2.Size = new System.Drawing.Size(1064, 590);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "PIP可视化工具";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -296,23 +309,10 @@ namespace ProgramBox.UI
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(200, 60);
+            this.listView1.Size = new System.Drawing.Size(1064, 590);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // uiButton2
-            // 
-            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(13, 54);
-            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton2.Name = "uiButton2";
-            this.uiButton2.Size = new System.Drawing.Size(126, 34);
-            this.uiButton2.TabIndex = 3;
-            this.uiButton2.Text = "PyQt5工具";
-            this.uiButton2.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // FPython
             // 
