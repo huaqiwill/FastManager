@@ -9,8 +9,18 @@ namespace ProgramBox.UI.Node
     /**
     .npmrc文件位置：C:\Users\31734\.npmrc
     **/
-    internal class NpmTools
+    public class NpmTools
     {
+        public void SetNpmRegistry()
+        {
+
+        }  
+
+        public void GetNpmRegistry()
+        {
+
+        }
+        
 
     }
 }
