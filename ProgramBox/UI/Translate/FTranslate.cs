@@ -11,9 +11,9 @@ using Sunny.UI;
 
 namespace ProgramBox.UI.Translate
 {
-    public partial class Translate : UIForm
+    public partial class FTranslate : UIForm
     {
-        public Translate()
+        public FTranslate()
         {
             InitializeComponent();
         }

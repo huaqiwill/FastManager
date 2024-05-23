@@ -133,9 +133,12 @@
     <Compile Include="UI\Node\NodeEnvData.cs" />
     <Compile Include="UI\Node\NodeTools.cs" />
     <Compile Include="UI\Node\NpmTools.cs" />
-    <Compile Include="UI\PHP\ComposerTools.cs" />
+    <Compile Include="UI\PHP\ComposerTool.cs" />
+    <Compile Include="UI\PHP\PhpTool.cs" />
     <Compile Include="UI\Python\PipTools.cs" />
     <Compile Include="UI\Python\PyTools.cs" />
+    <Compile Include="UI\RabbitMQ\RabbitMQTools.cs" />
+    <Compile Include="UI\Redis\RedisTools.cs" />
     <Compile Include="UI\RegistryTools.cs" />
     <Compile Include="UI\SQL\FSQL.cs">
       <SubType>Form</SubType>
@@ -197,13 +200,17 @@
     <Compile Include="UI\SQL\FSQLImport.Designer.cs">
       <DependentUpon>FSQLImport.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Translate\Class1.cs" />
-    <Compile Include="UI\Translate\Translate.cs">
+    <Compile Include="UI\SQL\MySQLTools.cs" />
+    <Compile Include="UI\SQL\SqliteTools.cs" />
+    <Compile Include="UI\Translate\Impl\BaiduTrainTool.cs" />
+    <Compile Include="UI\Translate\Impl\SougouTrainTool.cs" />
+    <Compile Include="UI\Translate\FTranslate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Translate\Translate.Designer.cs">
-      <DependentUpon>Translate.cs</DependentUpon>
+    <Compile Include="UI\Translate\FTranslate.Designer.cs">
+      <DependentUpon>FTranslate.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Translate\TranslateApi.cs" />
     <Compile Include="UI\Window\ConfigMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,8 +344,8 @@
     <EmbeddedResource Include="UI\SQL\FSQLImport.resx">
       <DependentUpon>FSQLImport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Translate\Translate.resx">
-      <DependentUpon>Translate.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Translate\FTranslate.resx">
+      <DependentUpon>FTranslate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Window\ConfigMain.resx">
       <DependentUpon>ConfigMain.cs</DependentUpon>

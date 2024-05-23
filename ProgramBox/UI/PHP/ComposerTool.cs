@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgramBox.UI.PHP
 {
-    internal class ComposerTools
+    internal class ComposerTool
     {
         // composer 配置阿里源
         public static void ComposerSetAliyun()

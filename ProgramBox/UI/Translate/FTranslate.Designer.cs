@@ -1,7 +1,7 @@
 ﻿
 namespace ProgramBox.UI.Translate
 {
-    partial class Translate
+    partial class FTranslate
     {
         /// <summary>
         /// Required designer variable.

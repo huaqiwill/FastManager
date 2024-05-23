@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgramBox.UI.Translate
+namespace ProgramBox.UI.PHP
 {
-    class Class1
+    internal class PhpTool
     {
     }
 }
