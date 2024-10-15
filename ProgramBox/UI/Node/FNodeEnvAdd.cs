@@ -1,9 +1,10 @@
 ﻿using Sunny.UI;
 using System;
+using System.Windows.Forms;
 
 namespace ProgramBox.UI
 {
-    public partial class FNodeEnvAdd : UIForm
+    public partial class FNodeEnvAdd : Form
     {
         NodeEnvData nodeEnvData;
 

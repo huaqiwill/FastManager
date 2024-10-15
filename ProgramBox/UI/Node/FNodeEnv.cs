@@ -1,10 +1,11 @@
 ﻿using SharpConfig;
 using Sunny.UI;
 using System;
+using System.Windows.Forms;
 
 namespace ProgramBox.UI
 {
-    public partial class FNodeEnv : UIForm
+    public partial class FNodeEnv : Form
     {
         Configuration cfg;
 

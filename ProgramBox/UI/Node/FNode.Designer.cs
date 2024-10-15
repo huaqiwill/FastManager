@@ -34,16 +34,16 @@ namespace ProgramBox.UI
             this.在资源管理器打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.配置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new Sunny.UI.UITabControl();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.NodeTP = new System.Windows.Forms.TabPage();
-            this.uiButton1 = new Sunny.UI.UIButton();
+            this.uiButton1 = new System.Windows.Forms.Button();
             this.NodePathLabel = new System.Windows.Forms.Label();
-            this.NodeVersionBtn = new Sunny.UI.UIButton();
-            this.button1 = new Sunny.UI.UIButton();
-            this.SetBtn = new Sunny.UI.UIButton();
-            this.DelBtn = new Sunny.UI.UIButton();
-            this.EditBtn = new Sunny.UI.UIButton();
-            this.AddBtn = new Sunny.UI.UIButton();
+            this.NodeVersionBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SetBtn = new System.Windows.Forms.Button();
+            this.DelBtn = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.NodeLV = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -51,27 +51,27 @@ namespace ProgramBox.UI
             this.NpmTP = new System.Windows.Forms.TabPage();
             this.NpmVersionLabel = new System.Windows.Forms.Label();
             this.NpmRegisrtyLabel = new System.Windows.Forms.Label();
-            this.button14 = new Sunny.UI.UIButton();
-            this.button13 = new Sunny.UI.UIButton();
-            this.Btn_NpmGlobalList = new Sunny.UI.UIButton();
-            this.Btn_NpmList = new Sunny.UI.UIButton();
-            this.Btn_NpmVersion = new Sunny.UI.UIButton();
-            this.Btn_NpmRegistry = new Sunny.UI.UIButton();
-            this.Btn_SetNpmSource = new Sunny.UI.UIButton();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.Btn_NpmGlobalList = new System.Windows.Forms.Button();
+            this.Btn_NpmList = new System.Windows.Forms.Button();
+            this.Btn_NpmVersion = new System.Windows.Forms.Button();
+            this.Btn_NpmRegistry = new System.Windows.Forms.Button();
+            this.Btn_SetNpmSource = new System.Windows.Forms.Button();
             this.PnpmTP = new System.Windows.Forms.TabPage();
-            this.PnpmCmdBtn = new Sunny.UI.UIButton();
+            this.PnpmCmdBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button8 = new Sunny.UI.UIButton();
+            this.button8 = new System.Windows.Forms.Button();
             this.listView3 = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.YarnTP = new System.Windows.Forms.TabPage();
-            this.YarnCmdBtn = new Sunny.UI.UIButton();
-            this.button5 = new Sunny.UI.UIButton();
-            this.button4 = new Sunny.UI.UIButton();
-            this.button3 = new Sunny.UI.UIButton();
-            this.button2 = new Sunny.UI.UIButton();
+            this.YarnCmdBtn = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.listView4 = new System.Windows.Forms.ListView();
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -115,7 +115,6 @@ namespace ProgramBox.UI
             // ListCMS
             // 
             this.ListCMS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.ListCMS.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ListCMS.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ListCMS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.在资源管理器打开ToolStripMenuItem,
@@ -153,17 +152,11 @@ namespace ProgramBox.UI
             this.tabControl1.Controls.Add(this.PnpmTP);
             this.tabControl1.Controls.Add(this.YarnTP);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.tabControl1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tabControl1.ItemSize = new System.Drawing.Size(150, 40);
-            this.tabControl1.Location = new System.Drawing.Point(0, 35);
-            this.tabControl1.MainPage = "";
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1064, 630);
+            this.tabControl1.Size = new System.Drawing.Size(1064, 665);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 6;
-            this.tabControl1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // NodeTP
             // 
@@ -178,7 +171,7 @@ namespace ProgramBox.UI
             this.NodeTP.Controls.Add(this.NodeLV);
             this.NodeTP.Location = new System.Drawing.Point(0, 40);
             this.NodeTP.Name = "NodeTP";
-            this.NodeTP.Size = new System.Drawing.Size(1064, 590);
+            this.NodeTP.Size = new System.Drawing.Size(1064, 625);
             this.NodeTP.TabIndex = 0;
             this.NodeTP.Text = "NODE管理工具";
             this.NodeTP.UseVisualStyleBackColor = true;
@@ -193,7 +186,6 @@ namespace ProgramBox.UI
             this.uiButton1.Size = new System.Drawing.Size(148, 39);
             this.uiButton1.TabIndex = 9;
             this.uiButton1.Text = "NODE环境配置";
-            this.uiButton1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
             // NodePathLabel
@@ -215,7 +207,6 @@ namespace ProgramBox.UI
             this.NodeVersionBtn.Size = new System.Drawing.Size(148, 39);
             this.NodeVersionBtn.TabIndex = 7;
             this.NodeVersionBtn.Text = "NODE版本配置";
-            this.NodeVersionBtn.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.NodeVersionBtn.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button1
@@ -228,7 +219,6 @@ namespace ProgramBox.UI
             this.button1.Size = new System.Drawing.Size(148, 39);
             this.button1.TabIndex = 5;
             this.button1.Text = "NODE常用命令";
-            this.button1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // SetBtn
             // 
@@ -240,7 +230,6 @@ namespace ProgramBox.UI
             this.SetBtn.Size = new System.Drawing.Size(75, 39);
             this.SetBtn.TabIndex = 4;
             this.SetBtn.Text = "配置";
-            this.SetBtn.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.SetBtn.Click += new System.EventHandler(this.button_config_Click);
             // 
             // DelBtn
@@ -253,7 +242,6 @@ namespace ProgramBox.UI
             this.DelBtn.Size = new System.Drawing.Size(75, 39);
             this.DelBtn.TabIndex = 3;
             this.DelBtn.Text = "删除";
-            this.DelBtn.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DelBtn.Click += new System.EventHandler(this.button4_Click);
             // 
             // EditBtn
@@ -266,7 +254,6 @@ namespace ProgramBox.UI
             this.EditBtn.Size = new System.Drawing.Size(75, 39);
             this.EditBtn.TabIndex = 2;
             this.EditBtn.Text = "修改";
-            this.EditBtn.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.EditBtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // AddBtn
@@ -279,7 +266,6 @@ namespace ProgramBox.UI
             this.AddBtn.Size = new System.Drawing.Size(75, 39);
             this.AddBtn.TabIndex = 1;
             this.AddBtn.Text = "添加";
-            this.AddBtn.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.AddBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // NodeLV
@@ -326,7 +312,7 @@ namespace ProgramBox.UI
             this.NpmTP.Controls.Add(this.Btn_SetNpmSource);
             this.NpmTP.Location = new System.Drawing.Point(0, 40);
             this.NpmTP.Name = "NpmTP";
-            this.NpmTP.Size = new System.Drawing.Size(200, 60);
+            this.NpmTP.Size = new System.Drawing.Size(1064, 625);
             this.NpmTP.TabIndex = 1;
             this.NpmTP.Text = "NPM管理工具";
             this.NpmTP.UseVisualStyleBackColor = true;
@@ -336,18 +322,16 @@ namespace ProgramBox.UI
             this.NpmVersionLabel.AutoSize = true;
             this.NpmVersionLabel.Location = new System.Drawing.Point(166, 60);
             this.NpmVersionLabel.Name = "NpmVersionLabel";
-            this.NpmVersionLabel.Size = new System.Drawing.Size(139, 20);
+            this.NpmVersionLabel.Size = new System.Drawing.Size(0, 20);
             this.NpmVersionLabel.TabIndex = 13;
-            this.NpmVersionLabel.Text = "npm当前版本：";
             // 
             // NpmRegisrtyLabel
             // 
             this.NpmRegisrtyLabel.AutoSize = true;
             this.NpmRegisrtyLabel.Location = new System.Drawing.Point(166, 19);
             this.NpmRegisrtyLabel.Name = "NpmRegisrtyLabel";
-            this.NpmRegisrtyLabel.Size = new System.Drawing.Size(139, 20);
+            this.NpmRegisrtyLabel.Size = new System.Drawing.Size(0, 20);
             this.NpmRegisrtyLabel.TabIndex = 12;
-            this.NpmRegisrtyLabel.Text = "npm当前镜像：";
             // 
             // button14
             // 
@@ -359,7 +343,6 @@ namespace ProgramBox.UI
             this.button14.Size = new System.Drawing.Size(152, 39);
             this.button14.TabIndex = 11;
             this.button14.Text = "NPM发布模块";
-            this.button14.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // button13
             // 
@@ -371,7 +354,6 @@ namespace ProgramBox.UI
             this.button13.Size = new System.Drawing.Size(152, 39);
             this.button13.TabIndex = 10;
             this.button13.Text = "NPM全局模块";
-            this.button13.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // Btn_NpmGlobalList
             // 
@@ -383,7 +365,6 @@ namespace ProgramBox.UI
             this.Btn_NpmGlobalList.Size = new System.Drawing.Size(152, 39);
             this.Btn_NpmGlobalList.TabIndex = 9;
             this.Btn_NpmGlobalList.Text = "NPM全局模块";
-            this.Btn_NpmGlobalList.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Btn_NpmGlobalList.Click += new System.EventHandler(this.button4_Click_2);
             // 
             // Btn_NpmList
@@ -396,7 +377,6 @@ namespace ProgramBox.UI
             this.Btn_NpmList.Size = new System.Drawing.Size(152, 39);
             this.Btn_NpmList.TabIndex = 8;
             this.Btn_NpmList.Text = "NPM可视化包";
-            this.Btn_NpmList.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Btn_NpmList.Click += new System.EventHandler(this.button3_Click);
             // 
             // Btn_NpmVersion
@@ -409,7 +389,6 @@ namespace ProgramBox.UI
             this.Btn_NpmVersion.Size = new System.Drawing.Size(152, 39);
             this.Btn_NpmVersion.TabIndex = 7;
             this.Btn_NpmVersion.Text = "NPM版本获取";
-            this.Btn_NpmVersion.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Btn_NpmVersion.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Btn_NpmRegistry
@@ -422,7 +401,6 @@ namespace ProgramBox.UI
             this.Btn_NpmRegistry.Size = new System.Drawing.Size(152, 39);
             this.Btn_NpmRegistry.TabIndex = 6;
             this.Btn_NpmRegistry.Text = "NPM国内源获取";
-            this.Btn_NpmRegistry.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Btn_NpmRegistry.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // Btn_SetNpmSource
@@ -435,7 +413,6 @@ namespace ProgramBox.UI
             this.Btn_SetNpmSource.Size = new System.Drawing.Size(153, 39);
             this.Btn_SetNpmSource.TabIndex = 5;
             this.Btn_SetNpmSource.Text = "NPM国内源配置";
-            this.Btn_SetNpmSource.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Btn_SetNpmSource.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // PnpmTP
@@ -446,7 +423,7 @@ namespace ProgramBox.UI
             this.PnpmTP.Controls.Add(this.listView3);
             this.PnpmTP.Location = new System.Drawing.Point(0, 40);
             this.PnpmTP.Name = "PnpmTP";
-            this.PnpmTP.Size = new System.Drawing.Size(200, 60);
+            this.PnpmTP.Size = new System.Drawing.Size(1064, 625);
             this.PnpmTP.TabIndex = 2;
             this.PnpmTP.Text = "PNPM管理工具";
             this.PnpmTP.UseVisualStyleBackColor = true;
@@ -461,7 +438,6 @@ namespace ProgramBox.UI
             this.PnpmCmdBtn.Size = new System.Drawing.Size(153, 39);
             this.PnpmCmdBtn.TabIndex = 10;
             this.PnpmCmdBtn.Text = "PNPM常用命令";
-            this.PnpmCmdBtn.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.PnpmCmdBtn.Click += new System.EventHandler(this.PnpmCmdBtn_Click);
             // 
             // textBox1
@@ -482,7 +458,6 @@ namespace ProgramBox.UI
             this.button8.Size = new System.Drawing.Size(75, 39);
             this.button8.TabIndex = 5;
             this.button8.Text = "搜索";
-            this.button8.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // listView3
             // 
@@ -494,9 +469,9 @@ namespace ProgramBox.UI
             this.listView3.FullRowSelect = true;
             this.listView3.GridLines = true;
             this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(0, -336);
+            this.listView3.Location = new System.Drawing.Point(0, 229);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(200, 396);
+            this.listView3.Size = new System.Drawing.Size(1064, 396);
             this.listView3.TabIndex = 2;
             this.listView3.UseCompatibleStateImageBehavior = false;
             this.listView3.View = System.Windows.Forms.View.Details;
@@ -524,7 +499,7 @@ namespace ProgramBox.UI
             this.YarnTP.Controls.Add(this.listView4);
             this.YarnTP.Location = new System.Drawing.Point(0, 40);
             this.YarnTP.Name = "YarnTP";
-            this.YarnTP.Size = new System.Drawing.Size(200, 60);
+            this.YarnTP.Size = new System.Drawing.Size(1064, 625);
             this.YarnTP.TabIndex = 3;
             this.YarnTP.Text = "YARN管理工具";
             this.YarnTP.UseVisualStyleBackColor = true;
@@ -539,7 +514,6 @@ namespace ProgramBox.UI
             this.YarnCmdBtn.Size = new System.Drawing.Size(170, 39);
             this.YarnCmdBtn.TabIndex = 9;
             this.YarnCmdBtn.Text = "YARN常用命令";
-            this.YarnCmdBtn.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.YarnCmdBtn.Click += new System.EventHandler(this.YarnCmdBtn_Click);
             // 
             // button5
@@ -552,7 +526,6 @@ namespace ProgramBox.UI
             this.button5.Size = new System.Drawing.Size(75, 39);
             this.button5.TabIndex = 8;
             this.button5.Text = "配置";
-            this.button5.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // button4
             // 
@@ -564,7 +537,6 @@ namespace ProgramBox.UI
             this.button4.Size = new System.Drawing.Size(75, 39);
             this.button4.TabIndex = 7;
             this.button4.Text = "删除";
-            this.button4.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // button3
             // 
@@ -576,7 +548,6 @@ namespace ProgramBox.UI
             this.button3.Size = new System.Drawing.Size(75, 39);
             this.button3.TabIndex = 6;
             this.button3.Text = "修改";
-            this.button3.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // button2
             // 
@@ -588,7 +559,6 @@ namespace ProgramBox.UI
             this.button2.Size = new System.Drawing.Size(75, 39);
             this.button2.TabIndex = 5;
             this.button2.Text = "添加";
-            this.button2.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // listView4
             // 
@@ -600,9 +570,9 @@ namespace ProgramBox.UI
             this.listView4.FullRowSelect = true;
             this.listView4.GridLines = true;
             this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(0, -323);
+            this.listView4.Location = new System.Drawing.Point(0, 242);
             this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(200, 383);
+            this.listView4.Size = new System.Drawing.Size(1064, 383);
             this.listView4.TabIndex = 2;
             this.listView4.UseCompatibleStateImageBehavior = false;
             this.listView4.View = System.Windows.Forms.View.Details;
@@ -813,7 +783,6 @@ namespace ProgramBox.UI
             this.Name = "FNode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nodejs环境管理";
-            this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 755, 543);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ListCMS.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -838,17 +807,17 @@ namespace ProgramBox.UI
         private System.Windows.Forms.ToolStripMenuItem 在资源管理器打开ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 配置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
-        private UITabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage NodeTP;
         private System.Windows.Forms.TabPage NpmTP;
         private System.Windows.Forms.ListView NodeLV;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private UIButton EditBtn;
-        private UIButton AddBtn;
-        private UIButton DelBtn;
-        private UIButton SetBtn;
+        private System.Windows.Forms.Button EditBtn;
+        private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.Button DelBtn;
+        private System.Windows.Forms.Button SetBtn;
         private System.Windows.Forms.TabPage PnpmTP;
         private System.Windows.Forms.TabPage YarnTP;
         private System.Windows.Forms.ListView listView3;
@@ -859,24 +828,24 @@ namespace ProgramBox.UI
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader12;
-        private UIButton Btn_SetNpmSource;
-        private UIButton button8;
+        private System.Windows.Forms.Button Btn_SetNpmSource;
+        private System.Windows.Forms.Button button8;
         private UIContextMenuStrip NpmCMS;
         private System.Windows.Forms.ToolStripMenuItem npm华为源ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem npm淘宝源ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem npm华为源ToolStripMenuItem1;
-        private UIButton Btn_NpmRegistry;
-        private UIButton Btn_NpmVersion;
-        private UIButton Btn_NpmList;
-        private UIButton Btn_NpmGlobalList;
-        private UIButton button13;
-        private UIButton button14;
+        private System.Windows.Forms.Button Btn_NpmRegistry;
+        private System.Windows.Forms.Button Btn_NpmVersion;
+        private System.Windows.Forms.Button Btn_NpmList;
+        private System.Windows.Forms.Button Btn_NpmGlobalList;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.TextBox textBox1;
-        private UIButton PnpmCmdBtn;
+        private System.Windows.Forms.Button PnpmCmdBtn;
         private System.Windows.Forms.Label NpmVersionLabel;
         private System.Windows.Forms.Label NpmRegisrtyLabel;
-        private UIButton button1;
-        private UIButton NodeVersionBtn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button NodeVersionBtn;
         private UIContextMenuStrip NodeCMS;
         private System.Windows.Forms.ToolStripMenuItem node12ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem node16ToolStripMenuItem;
@@ -889,11 +858,11 @@ namespace ProgramBox.UI
         private System.Windows.Forms.ToolStripMenuItem pnpm华为源ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pnpm清华源ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pnpm淘宝源ToolStripMenuItem;
-        private UIButton button5;
-        private UIButton button4;
-        private UIButton button3;
-        private UIButton button2;
-        private UIButton YarnCmdBtn;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button YarnCmdBtn;
         private UIContextMenuStrip YarnCMS;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
@@ -902,7 +871,7 @@ namespace ProgramBox.UI
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private UIContextMenuStrip uiContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem node编辑ToolStripMenuItem;
-        private UIButton uiButton1;
+        private System.Windows.Forms.Button uiButton1;
     }
 }
 

@@ -16,7 +16,7 @@ Nodejs环境管理工具
 **/
 namespace ProgramBox.UI
 {
-    public partial class FNode : UIForm
+    public partial class FNode : Form
     {
         public FNode()
         {
