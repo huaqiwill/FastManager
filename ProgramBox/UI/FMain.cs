@@ -72,7 +72,7 @@ namespace ProgramBox.UI
             }
         }
 
-        JsonDataUtils jsonDataUtils;
+        JsonDataUtil jsonDataUtils;
 
         private void DefaultConfigs()
         {
@@ -120,7 +120,7 @@ namespace ProgramBox.UI
             config = Configuration.LoadFromFile(App.ConfigPath);
 
             // 默认配置
-            jsonDataUtils = new JsonDataUtils();
+            jsonDataUtils = new JsonDataUtil();
             //DefaultConfigs();
 
             // 托盘图标
@@ -184,7 +184,14 @@ namespace ProgramBox.UI
                 };
             }
 
-            UtilsLV.LargeImageList.Images.Add(atom.Key, Image.FromFile(App.FullPath(atom.IconPath)));
+            try
+            {
+                UtilsLV.LargeImageList.Images.Add(atom.Key, Image.FromFile(App.FullPath(atom.IconPath)));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
 
             // 指定表项
             ListViewItem item = new ListViewItem();
@@ -202,7 +209,15 @@ namespace ProgramBox.UI
                 WinToolsLV.LargeImageList = new ImageList();
                 WinToolsLV.LargeImageList.ImageSize = new Size(64, 64);
             }
-            WinToolsLV.LargeImageList.Images.Add(atom.Key, Image.FromFile(App.FullPath(atom.IconPath)));
+
+            try
+            {
+                WinToolsLV.LargeImageList.Images.Add(atom.Key, Image.FromFile(App.FullPath(atom.IconPath)));
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             // 指定表项
             ListViewItem item = new ListViewItem();
@@ -312,49 +327,49 @@ namespace ProgramBox.UI
             switch (item.Tag)
             {
                 case "disk":
-                    WinTool.openDisk();
+                    WinCommonUtil.openDisk();
                     break;
                 case "device":
-                    WinTool.openDisk();
+                    WinCommonUtil.openDisk();
                     break;
                 case "planned_task":
-                    WinTool.openPlannedTask();
+                    WinCommonUtil.openPlannedTask();
                     break;
                 case "regedit":
-                    WinTool.openRegedit();
+                    WinCommonUtil.openRegedit();
                     break;
                 case "task":
-                    WinTool.openTask();
+                    WinCommonUtil.openTask();
                     break;
                 case "env":
-                    WinTool.openEnv();
+                    WinCommonUtil.openEnv();
                     break;
                 case "res":
-                    WinTool.openRes();
+                    WinCommonUtil.openRes();
                     break;
                 case "config":
-                    WinTool.openConfig();
+                    WinCommonUtil.openConfig();
                     break;
                 case "info":
-                    WinTool.openInfo();
+                    WinCommonUtil.openInfo();
                     break;
                 case "event":
-                    WinTool.openEvent();
+                    WinCommonUtil.openEvent();
                     break;
                 case "firewall":
-                    WinTool.openFirewall();
+                    WinCommonUtil.openFirewall();
                     break;
                 case "server":
-                    WinTool.openServer();
+                    WinCommonUtil.openServer();
                     break;
                 case "computer":
-                    WinTool.openCM();
+                    WinCommonUtil.openCM();
                     break;
                 case "security":
-                    WinTool.openLocalSecrity();
+                    WinCommonUtil.openLocalSecrity();
                     break;
                 case "control":
-                    WinTool.openControl();
+                    WinCommonUtil.openControl();
                     break;
             }
         }

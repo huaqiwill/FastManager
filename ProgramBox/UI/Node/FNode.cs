@@ -122,19 +122,19 @@ namespace ProgramBox.UI
             string v = Command.Run("node -v");
             BeginInvoke((MethodInvoker)delegate
             {
-                if (WinEnv.Exist(node12))
+                if (WinEnvUtil.Exist(node12))
                 {
                     NodePathLabel.Text = "当前node路径：" + node12;
                 }
-                if (WinEnv.Exist(node16))
+                if (WinEnvUtil.Exist(node16))
                 {
                     NodePathLabel.Text = "当前node路径：" + node16;
                 }
-                if (WinEnv.Exist(node18))
+                if (WinEnvUtil.Exist(node18))
                 {
                     NodePathLabel.Text = "当前node路径：" + node18;
                 }
-                if (WinEnv.Exist(node20))
+                if (WinEnvUtil.Exist(node20))
                 {
                     NodePathLabel.Text = "当前node路径：" + node20;
                 }
@@ -213,12 +213,12 @@ namespace ProgramBox.UI
                     NodeVersionBtn.Enabled = false;
                     Cursor = Cursors.WaitCursor;
                 });
-                WinEnv.Remove(cfg["node"]["node12"].StringValue);
-                WinEnv.Remove(cfg["node"]["node16"].StringValue);
-                WinEnv.Remove(cfg["node"]["node18"].StringValue);
-                WinEnv.Remove(cfg["node"]["node20"].StringValue);
+                WinEnvUtil.Remove(cfg["node"]["node12"].StringValue);
+                WinEnvUtil.Remove(cfg["node"]["node16"].StringValue);
+                WinEnvUtil.Remove(cfg["node"]["node18"].StringValue);
+                WinEnvUtil.Remove(cfg["node"]["node20"].StringValue);
 
-                WinEnv.Set(cfg["node"][key].StringValue);
+                WinEnvUtil.Set(cfg["node"][key].StringValue);
                 BeginInvoke((MethodInvoker)delegate
                 {
                     Cursor = Cursors.Arrow;
@@ -234,7 +234,7 @@ namespace ProgramBox.UI
             item.Text = name;
             item.SubItems.Add(path);
 
-            string status = WinEnv.Exist(path) ? "已设置" : "";
+            string status = WinEnvUtil.Exist(path) ? "已设置" : "";
 
             item.SubItems.Add(status);
             NodeLV.Items.Add(item);

@@ -12,7 +12,7 @@ using System.Collections.Generic;
 **/
 namespace ProgramBox.Utils
 {
-    public class WinEnv
+    public class WinEnvUtil
     {
         // 设置环境变量
         public static bool Set(string pathVar)

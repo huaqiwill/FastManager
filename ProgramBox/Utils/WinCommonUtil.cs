@@ -5,7 +5,7 @@ Windows系统工具
 **/
 namespace ProgramBox.Utils
 {
-    internal class WinTool
+    internal class WinCommonUtil
     {
         public static void openDevice()
         {

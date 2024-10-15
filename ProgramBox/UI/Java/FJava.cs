@@ -46,15 +46,15 @@ namespace ProgramBox.UI
             textBox_jdk11.Text = configuration["jdk"]["jdk11"].StringValue;
             textBox_jdk17.Text = configuration["jdk"]["jdk17"].StringValue;
 
-            if (WinEnv.Exist(configuration["jdk"]["jdk8"].StringValue))
+            if (WinEnvUtil.Exist(configuration["jdk"]["jdk8"].StringValue))
             {
                 PathVarButtonSelect("jdk8");
             }
-            if (WinEnv.Exist(configuration["jdk"]["jdk11"].StringValue))
+            if (WinEnvUtil.Exist(configuration["jdk"]["jdk11"].StringValue))
             {
                 PathVarButtonSelect("jdk11");
             }
-            if (WinEnv.Exist(configuration["jdk"]["jdk17"].StringValue))
+            if (WinEnvUtil.Exist(configuration["jdk"]["jdk17"].StringValue))
             {
                 PathVarButtonSelect("jdk17");
             }
@@ -168,9 +168,9 @@ namespace ProgramBox.UI
 
         private void PathVarRemoveAll()
         {
-            WinEnv.Remove(configuration["jdk"]["jdk8"].StringValue);
-            WinEnv.Remove(configuration["jdk"]["jdk11"].StringValue);
-            WinEnv.Remove(configuration["jdk"]["jdk17"].StringValue);
+            WinEnvUtil.Remove(configuration["jdk"]["jdk8"].StringValue);
+            WinEnvUtil.Remove(configuration["jdk"]["jdk11"].StringValue);
+            WinEnvUtil.Remove(configuration["jdk"]["jdk17"].StringValue);
         }
 
         private void PathVarButtonSelect(string name)
@@ -216,7 +216,7 @@ namespace ProgramBox.UI
                     button_setjdk8.Enabled = false;
                 });
                 PathVarRemoveAll();
-                WinEnv.Set(configuration["jdk"]["jdk8"].StringValue);
+                WinEnvUtil.Set(configuration["jdk"]["jdk8"].StringValue);
 
                 BeginInvoke((MethodInvoker)delegate
                 {
@@ -241,7 +241,7 @@ namespace ProgramBox.UI
                     button_setjdk11.Enabled = false;
                 });
                 PathVarRemoveAll();
-                WinEnv.Set(configuration["jdk"]["jdk11"].StringValue);
+                WinEnvUtil.Set(configuration["jdk"]["jdk11"].StringValue);
 
                 BeginInvoke((MethodInvoker)delegate
                 {
@@ -266,7 +266,7 @@ namespace ProgramBox.UI
                     button_setjdk17.Enabled = false;
                 });
                 PathVarRemoveAll();
-                WinEnv.Set(configuration["jdk"]["jdk17"].StringValue);
+                WinEnvUtil.Set(configuration["jdk"]["jdk17"].StringValue);
 
                 BeginInvoke((MethodInvoker)delegate
                 {

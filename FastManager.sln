@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{3A37CF1C-D2E9-4C2A-BB07-F44A6A60237B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgramBox.Avalonia", "ProgramBox.Avalonia\ProgramBox.Avalonia.csproj", "{49B0F5B1-98CE-4413-A0AF-B2C22CE7F4DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,10 @@ Global
 		{C5C8DEBE-4E68-40C4-B44D-D0E4BA69C594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C8DEBE-4E68-40C4-B44D-D0E4BA69C594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C8DEBE-4E68-40C4-B44D-D0E4BA69C594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B0F5B1-98CE-4413-A0AF-B2C22CE7F4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B0F5B1-98CE-4413-A0AF-B2C22CE7F4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B0F5B1-98CE-4413-A0AF-B2C22CE7F4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B0F5B1-98CE-4413-A0AF-B2C22CE7F4DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

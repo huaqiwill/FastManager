@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace ProgramBox.Utils
 {
-    class JsonDataUtils
+    public class JsonDataUtil
     {
         public class JsonData
         {
@@ -66,7 +66,7 @@ namespace ProgramBox.Utils
             }
         }
 
-        public JsonDataUtils()
+        public JsonDataUtil()
         {
             if (!File.Exists(App.JsonPath)) File.Create(App.JsonPath).Close();
             string text = File.ReadAllText(App.JsonPath);
