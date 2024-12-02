@@ -85,307 +85,307 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
-    <Compile Include="Middleware\Middleware.cs" />
-    <Compile Include="Model\Atom.cs" />
-    <Compile Include="Service.cs" />
-    <Compile Include="UI\CPP\CppTools.cs" />
-    <Compile Include="UI\CPP\FCPP.cs">
+    <Compile Include="Core\App.cs" />
+    <Compile Include="Core\Middleware\Middleware.cs" />
+    <Compile Include="Core\Model\Atom.cs" />
+    <Compile Include="Core\Service.cs" />
+    <Compile Include="Core\CppTools.cs" />
+    <Compile Include="Page\FCPP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\CPP\FCPP.Designer.cs">
+    <Compile Include="Page\FCPP.Designer.cs">
       <DependentUpon>FCPP.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Java\GradleTools.cs" />
-    <Compile Include="UI\Java\JavaTools.cs" />
-    <Compile Include="UI\Java\MavenTools.cs" />
-    <Compile Include="UI\MinIO\FMinio.cs">
+    <Compile Include="Core\GradleTools.cs" />
+    <Compile Include="Core\JavaTools.cs" />
+    <Compile Include="Core\MavenTools.cs" />
+    <Compile Include="Page\FMinio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\MinIO\FMinio.Designer.cs">
+    <Compile Include="Page\FMinio.Designer.cs">
       <DependentUpon>FMinio.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\MinIO\MinioTools.cs" />
-    <Compile Include="UI\NET\FNET.cs">
+    <Compile Include="Core\MinioTools.cs" />
+    <Compile Include="Page\FNET.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\NET\FNET.Designer.cs">
+    <Compile Include="Page\FNET.Designer.cs">
       <DependentUpon>FNET.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\NET\NETTools.cs" />
-    <Compile Include="UI\Nginx\FNginx.cs">
+    <Compile Include="Core\NETTools.cs" />
+    <Compile Include="Page\FNginx.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Nginx\FNginx.Designer.cs">
+    <Compile Include="Page\FNginx.Designer.cs">
       <DependentUpon>FNginx.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Java\FJava.cs">
+    <Compile Include="Page\FJava.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Java\FJava.Designer.cs">
+    <Compile Include="Page\FJava.Designer.cs">
       <DependentUpon>FJava.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Nginx\NginxTools.cs" />
-    <Compile Include="UI\Node\FNodeEnv.cs">
+    <Compile Include="Core\NginxTools.cs" />
+    <Compile Include="Page\FNodeEnv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Node\FNodeEnv.Designer.cs">
+    <Compile Include="Page\FNodeEnv.Designer.cs">
       <DependentUpon>FNodeEnv.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Node\NodeEnvData.cs" />
-    <Compile Include="UI\Node\NodeTools.cs" />
-    <Compile Include="UI\Node\NpmTools.cs" />
-    <Compile Include="UI\PHP\ComposerTool.cs" />
-    <Compile Include="UI\PHP\PhpTool.cs" />
-    <Compile Include="UI\Python\PipTools.cs" />
-    <Compile Include="UI\Python\PyTools.cs" />
-    <Compile Include="UI\RabbitMQ\RabbitMQTools.cs" />
-    <Compile Include="UI\Redis\RedisTools.cs" />
-    <Compile Include="UI\RegistryTools.cs" />
-    <Compile Include="UI\SQL\FSQL.cs">
+    <Compile Include="Core\NodeEnvData.cs" />
+    <Compile Include="Core\NodeTools.cs" />
+    <Compile Include="Core\NpmTools.cs" />
+    <Compile Include="Core\ComposerTool.cs" />
+    <Compile Include="Core\PhpTool.cs" />
+    <Compile Include="Core\PipTools.cs" />
+    <Compile Include="Core\PyTools.cs" />
+    <Compile Include="Core\RabbitMQTools.cs" />
+    <Compile Include="Core\RedisTools.cs" />
+    <Compile Include="Core\RegistryTools.cs" />
+    <Compile Include="Page\FSQL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\SQL\FSQL.Designer.cs">
+    <Compile Include="Page\FSQL.Designer.cs">
       <DependentUpon>FSQL.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Node\FNodeEnvAdd.cs">
+    <Compile Include="Page\FNodeEnvAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Node\FNodeEnvAdd.Designer.cs">
+    <Compile Include="Page\FNodeEnvAdd.Designer.cs">
       <DependentUpon>FNodeEnvAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Node\FNode.cs">
+    <Compile Include="Page\FNode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Node\FNode.Designer.cs">
+    <Compile Include="Page\FNode.Designer.cs">
       <DependentUpon>FNode.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FMain.cs">
+    <Compile Include="Page\FMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FMain.Designer.cs">
+    <Compile Include="Page\FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\PHP\FPHP.cs">
+    <Compile Include="Page\FPHP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\PHP\FPHP.Designer.cs">
+    <Compile Include="Page\FPHP.Designer.cs">
       <DependentUpon>FPHP.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Python\FPython.cs">
+    <Compile Include="Page\FPython.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Python\FPython.Designer.cs">
+    <Compile Include="Page\FPython.Designer.cs">
       <DependentUpon>FPython.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\RabbitMQ\FRabbitMQ.cs">
+    <Compile Include="Page\FRabbitMQ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\RabbitMQ\FRabbitMQ.Designer.cs">
+    <Compile Include="Page\FRabbitMQ.Designer.cs">
       <DependentUpon>FRabbitMQ.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Redis\FRedis.cs">
+    <Compile Include="Page\FRedis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Redis\FRedis.Designer.cs">
+    <Compile Include="Page\FRedis.Designer.cs">
       <DependentUpon>FRedis.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\SQL\FSQLConfig.cs">
+    <Compile Include="Page\FSQLConfig.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\SQL\FSQLConfig.Designer.cs">
+    <Compile Include="Page\FSQLConfig.Designer.cs">
       <DependentUpon>FSQLConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\SQL\FSQLImport.cs">
+    <Compile Include="Page\FSQLImport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\SQL\FSQLImport.Designer.cs">
+    <Compile Include="Page\FSQLImport.Designer.cs">
       <DependentUpon>FSQLImport.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\SQL\MySQLTools.cs" />
-    <Compile Include="UI\SQL\SqliteTools.cs" />
-    <Compile Include="UI\Translate\Impl\BaiduTrainTool.cs" />
-    <Compile Include="UI\Translate\Impl\SougouTrainTool.cs" />
-    <Compile Include="UI\Translate\FTranslate.cs">
+    <Compile Include="Core\MySQLTools.cs" />
+    <Compile Include="Core\SqliteTools.cs" />
+    <Compile Include="Core\Impl\BaiduTrainTool.cs" />
+    <Compile Include="Core\Impl\SougouTrainTool.cs" />
+    <Compile Include="Page\FTranslate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Translate\FTranslate.Designer.cs">
+    <Compile Include="Page\FTranslate.Designer.cs">
       <DependentUpon>FTranslate.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Translate\TranslateApi.cs" />
-    <Compile Include="UI\Window\ConfigMain.cs">
+    <Compile Include="Core\TranslateApi.cs" />
+    <Compile Include="Page\Main\ConfigMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\ConfigMain.Designer.cs">
+    <Compile Include="Page\Main\ConfigMain.Designer.cs">
       <DependentUpon>ConfigMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\DesignMain.cs">
+    <Compile Include="Page\Main\DesignMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\DesignMain.Designer.cs">
+    <Compile Include="Page\Main\DesignMain.Designer.cs">
       <DependentUpon>DesignMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\DevMain.cs">
+    <Compile Include="Page\Main\DevMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\DevMain.Designer.cs">
+    <Compile Include="Page\Main\DevMain.Designer.cs">
       <DependentUpon>DevMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\DataGenForm.cs">
+    <Compile Include="Page\Main\DataGenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\DataGenForm.Designer.cs">
+    <Compile Include="Page\Main\DataGenForm.Designer.cs">
       <DependentUpon>DataGenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\EnvMan.cs">
+    <Compile Include="Page\Main\EnvMan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\EnvMan.Designer.cs">
+    <Compile Include="Page\Main\EnvMan.Designer.cs">
       <DependentUpon>EnvMan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\EnvManForm.cs">
+    <Compile Include="Page\Main\EnvManForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\EnvManForm.Designer.cs">
+    <Compile Include="Page\Main\EnvManForm.Designer.cs">
       <DependentUpon>EnvManForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\HostsFileEdit.cs">
+    <Compile Include="Page\Main\HostsFileEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\HostsFileEdit.Designer.cs">
+    <Compile Include="Page\Main\HostsFileEdit.Designer.cs">
       <DependentUpon>HostsFileEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\PhpDebug.cs">
+    <Compile Include="Page\Main\PhpDebug.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\PhpDebug.Designer.cs">
+    <Compile Include="Page\Main\PhpDebug.Designer.cs">
       <DependentUpon>PhpDebug.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\PosMan.cs">
+    <Compile Include="Page\Main\PosMan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\PosMan.Designer.cs">
+    <Compile Include="Page\Main\PosMan.Designer.cs">
       <DependentUpon>PosMan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\ProMan.cs">
+    <Compile Include="Page\Main\ProMan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\ProMan.Designer.cs">
+    <Compile Include="Page\Main\ProMan.Designer.cs">
       <DependentUpon>ProMan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\SevMan.cs">
+    <Compile Include="Page\Main\SevMan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\SevMan.Designer.cs">
+    <Compile Include="Page\Main\SevMan.Designer.cs">
       <DependentUpon>SevMan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\Dev\TskMan.cs">
+    <Compile Include="Page\Main\TskMan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\Dev\TskMan.Designer.cs">
+    <Compile Include="Page\Main\TskMan.Designer.cs">
       <DependentUpon>TskMan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Window\MainForm.cs">
+    <Compile Include="Page\Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Window\MainForm.Designer.cs">
+    <Compile Include="Page\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utils\Command.cs" />
-    <Compile Include="Model\PathFrmVo.cs" />
+    <Compile Include="Core\Utils\Command.cs" />
+    <Compile Include="Core\Model\PathFrmVo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\JsonDataUtil.cs" />
-    <Compile Include="Utils\WinEnvUtil.cs" />
-    <Compile Include="Utils\WinCommonUtil.cs" />
-    <EmbeddedResource Include="UI\CPP\FCPP.resx">
+    <Compile Include="Core\Utils\JsonDataUtil.cs" />
+    <Compile Include="Core\Utils\WinEnvUtil.cs" />
+    <Compile Include="Core\Utils\WinCommonUtil.cs" />
+    <EmbeddedResource Include="Page\FCPP.resx">
       <DependentUpon>FCPP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\MinIO\FMinio.resx">
+    <EmbeddedResource Include="Page\FMinio.resx">
       <DependentUpon>FMinio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\NET\FNET.resx">
+    <EmbeddedResource Include="Page\FNET.resx">
       <DependentUpon>FNET.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Nginx\FNginx.resx">
+    <EmbeddedResource Include="Page\FNginx.resx">
       <DependentUpon>FNginx.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Java\FJava.resx">
+    <EmbeddedResource Include="Page\FJava.resx">
       <DependentUpon>FJava.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FMain.resx">
+    <EmbeddedResource Include="Page\FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Node\FNodeEnv.resx">
+    <EmbeddedResource Include="Page\FNodeEnv.resx">
       <DependentUpon>FNodeEnv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\SQL\FSQL.resx">
+    <EmbeddedResource Include="Page\FSQL.resx">
       <DependentUpon>FSQL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Node\FNodeEnvAdd.resx">
+    <EmbeddedResource Include="Page\FNodeEnvAdd.resx">
       <DependentUpon>FNodeEnvAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Node\FNode.resx">
+    <EmbeddedResource Include="Page\FNode.resx">
       <DependentUpon>FNode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\PHP\FPHP.resx">
+    <EmbeddedResource Include="Page\FPHP.resx">
       <DependentUpon>FPHP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Python\FPython.resx">
+    <EmbeddedResource Include="Page\FPython.resx">
       <DependentUpon>FPython.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\RabbitMQ\FRabbitMQ.resx">
+    <EmbeddedResource Include="Page\FRabbitMQ.resx">
       <DependentUpon>FRabbitMQ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Redis\FRedis.resx">
+    <EmbeddedResource Include="Page\FRedis.resx">
       <DependentUpon>FRedis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\SQL\FSQLConfig.resx">
+    <EmbeddedResource Include="Page\FSQLConfig.resx">
       <DependentUpon>FSQLConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\SQL\FSQLImport.resx">
+    <EmbeddedResource Include="Page\FSQLImport.resx">
       <DependentUpon>FSQLImport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Translate\FTranslate.resx">
+    <EmbeddedResource Include="Page\FTranslate.resx">
       <DependentUpon>FTranslate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\ConfigMain.resx">
+    <EmbeddedResource Include="Page\Main\ConfigMain.resx">
       <DependentUpon>ConfigMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\DesignMain.resx">
+    <EmbeddedResource Include="Page\Main\DesignMain.resx">
       <DependentUpon>DesignMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\DevMain.resx">
+    <EmbeddedResource Include="Page\Main\DevMain.resx">
       <DependentUpon>DevMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\DataGenForm.resx">
+    <EmbeddedResource Include="Page\Main\DataGenForm.resx">
       <DependentUpon>DataGenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\EnvMan.resx">
+    <EmbeddedResource Include="Page\Main\EnvMan.resx">
       <DependentUpon>EnvMan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\EnvManForm.resx">
+    <EmbeddedResource Include="Page\Main\EnvManForm.resx">
       <DependentUpon>EnvManForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\HostsFileEdit.resx">
+    <EmbeddedResource Include="Page\Main\HostsFileEdit.resx">
       <DependentUpon>HostsFileEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\PhpDebug.resx">
+    <EmbeddedResource Include="Page\Main\PhpDebug.resx">
       <DependentUpon>PhpDebug.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\PosMan.resx">
+    <EmbeddedResource Include="Page\Main\PosMan.resx">
       <DependentUpon>PosMan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\ProMan.resx">
+    <EmbeddedResource Include="Page\Main\ProMan.resx">
       <DependentUpon>ProMan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\SevMan.resx">
+    <EmbeddedResource Include="Page\Main\SevMan.resx">
       <DependentUpon>SevMan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\Dev\TskMan.resx">
+    <EmbeddedResource Include="Page\Main\TskMan.resx">
       <DependentUpon>TskMan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Window\MainForm.resx">
+    <EmbeddedResource Include="Page\Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -431,8 +431,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\Window\Design\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
